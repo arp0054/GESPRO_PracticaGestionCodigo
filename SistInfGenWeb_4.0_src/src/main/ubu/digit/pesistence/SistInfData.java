@@ -24,7 +24,7 @@ import ubu.digit.util.ExternalProperties;
  * Fachada Singleton de acceso a datos a través de un recurso
  * jdbc:relique:csv:dir (directorio donde se encuentra). Se proporciona una hoja
  * de datos con la definición de la estructura para probar sus funciones.
- * 
+ *
  * @author Carlos López Nozal
  * @author Beatriz Zurera Martínez-Acitores
  * @since 0.5
@@ -55,7 +55,7 @@ public class SistInfData {
      * URL donde encontramos el fichero con las propiedades del proyecto.
      */
     private static ExternalProperties prop = ExternalProperties
-            .getInstance("./../src/main/config.properties");
+            .getInstance("./config.properties");
 
     /**
      * Directorio donde se encuentra los datos de entrada, es decir, los
@@ -83,7 +83,7 @@ public class SistInfData {
 
     /**
      * Inicializa la conexión odbc al almacen de datos.
-     * 
+     *
      * @param url
      *            cadena de conexión jdbc.csv.
      */
@@ -105,7 +105,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL sumando todos los datos Float contenidos en la
      * primera columna.
-     * 
+     *
      * @param SQL
      *            sentencia sql a ejecutar
      * @return suma todas la filas de la primera columna
@@ -136,7 +136,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo la media aritmética de la columna de
      * la tabla ambas pasadas como parámetro.
-     * 
+     *
      * @param columnName
      *            nombre de la columna
      * @param tableName
@@ -160,7 +160,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo el valor máximo de la columna de una
      * tabla, ambas pasadas como parámetro.
-     * 
+     *
      * @param columnName
      *            nombre de la columna
      * @param tableName
@@ -177,7 +177,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo el valor mínimo de la columna de una
      * tabla, ambas pasadas como parámetro.
-     * 
+     *
      * @param columnName
      *            nombre de la columna
      * @param tableName
@@ -194,7 +194,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo la desviación estandart de la
      * columna de una tabla, ambas pasadas como parámetro.
-     * 
+     *
      * @param columnName
      *            nombre de la columna
      * @param tableName
@@ -210,7 +210,7 @@ public class SistInfData {
 
     /**
      * Obtiene los datos de una columna determinada de una tabla determinada.
-     * 
+     *
      * @param columnName
      *            nombre de la columna
      * @param tableName
@@ -239,7 +239,7 @@ public class SistInfData {
 
     /**
      * Calcula la desviación standard.
-     * 
+     *
      * @param list
      *            Listado de los números de los que calcular la desviación.
      * @return Desviación standard.
@@ -286,7 +286,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo la mediana de la columna de una
      * tabla, ambas pasadas como parámetro.
-     * 
+     *
      * @param columnName
      *            nombre de la columna
      * @param tableName
@@ -340,7 +340,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo el número total de filas diferentes,
      * distintas de null y cumplen la claúsula where de la columna de una tabla.
-     * 
+     *
      * @param columnName
      *            nombre de la columna.
      * @param tableName
@@ -360,7 +360,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo el número total de filas diferentes,
      * distintas de null y que cumplan el filtro de la columna de una tabla.
-     * 
+     *
      * @param columnName
      *            nombre de la columna
      * @param tableName
@@ -383,7 +383,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo el número total de filas diferentes
      * y distintas de null de las columnas de una tabla pasadas como parámetro.
-     * 
+     *
      * @param columnsName
      *            nombre de las columnas
      * @param tableName
@@ -422,7 +422,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo el número total de proyectos sin
      * asignar. Se busca una cadena que contenga la subcadena "Aal".
-     * 
+     *
      * @return número total de proyectos sin asignar
      * @throws SQLException
      */
@@ -436,7 +436,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo un conjunto de filas distintas de
      * nulo de una columna de una tabla, ambas pasadas como parámetros.
-     * 
+     *
      * @param columnName
      *            nombre de la columna a discriminar el contador.
      * @param tableName
@@ -456,7 +456,7 @@ public class SistInfData {
     /**
      * Ejecuta una sentencia SQL obteniendo un conjunto de filas distintas de
      * nulo y cumplen la condición pasada como parámetro.
-     * 
+     *
      * @param columnName
      *            nombre de la columna a discriminar con nulos.
      * @param tableName
@@ -480,7 +480,7 @@ public class SistInfData {
      * Ejecuta una sentencia SQL obteniendo un conjunto de filas distintas de
      * nulo y que contienen las cadenas pasadas como filtros de una columna de
      * una tabla, ambas pasadas como parámetro.
-     * 
+     *
      * @param tableName
      *            nombre de la tabla de datos.
      * @param columnName
@@ -532,7 +532,7 @@ public class SistInfData {
     /**
      * Método que obtiene el curso más bajo o más alto, según el booleano, que
      * tiene la base de datos.
-     * 
+     *
      * @param columnName
      *            Nombre de la columna.
      * @param tableName
@@ -572,7 +572,7 @@ public class SistInfData {
     /**
      * Método que obtiene la fecha de asignación, la fecha de presentación, el
      * total de días y la nota respectiva del proyecto.
-     * 
+     *
      * @param columnName
      *            Nombre de la columna de la fecha de asignación.
      * @param columnName2
@@ -639,14 +639,14 @@ public class SistInfData {
 
     /**
      * Transforma el string que le llega en un tipo Date.
-     * 
+     *
      * @param g
      *            Fecha en tipo String
      * @return Fecha con formato Date
      */
     private Date transform(String g) {
 
-        DateFormat formatter = new SimpleDateFormat("MM/DD/yyyy");
+        DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 
         Date date = null;
         try {
@@ -659,7 +659,7 @@ public class SistInfData {
 
     /**
      * Destructor elimina la conexión al sistema de acceso a datos.
-     * 
+     *
      **/
     @Override
     public void finalize() throws Throwable {
