@@ -1,3 +1,13 @@
+Integrantes del grupo:
+
+- Álvaro Ruifernández Palacios
+- Iván Arjona Alonso
+
+
+--------------
+
+
+
 Gestion de Proyectos
 
 Universidad de Burgos. Grado en Ingeniería Informática.
