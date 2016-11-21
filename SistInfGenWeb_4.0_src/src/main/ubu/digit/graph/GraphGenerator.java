@@ -28,7 +28,7 @@ import ubu.digit.util.ExternalProperties;
 
 /**
  * Clase encargada de generar gráficos estadísticos.
- * 
+ *
  * @author Carlos López Nozal
  * @author Beatriz Zurera Martínez-Acitores
  * @since 0.5
@@ -46,7 +46,7 @@ public class GraphGenerator {
      * URL donde encontramos el fichero con las propiedades del proyecto.
      */
     private static ExternalProperties prop = ExternalProperties
-            .getInstance("./../src/main/config.properties");
+            .getInstance("./config.properties");
 
     /**
      * Constructor.
@@ -57,7 +57,7 @@ public class GraphGenerator {
 
     /**
      * Método que crea el gráfico de los intervalos de las métricas de producto.
-     * 
+     *
      * @param title
      *            Título del gráfico.
      * @param xLabel
