@@ -20,7 +20,7 @@ import ubu.digit.util.ExternalProperties;
  * Dependencias sobre los datos: Tribunal(Cargo,NombreApellidos,Nick)
  * Norma(Descripcion) Calendario(Descripcion,Convocatoria,Fecha)
  * Documento(Descripcion,Url)
- * 
+ *
  * @author Carlos López Nozal
  * @author Beatriz Zurera Martínez-Acitores
  * @since 0.6
@@ -128,7 +128,7 @@ public class DocIndex extends DocSistInfHtml {
      * documentos de la página de index.html.
      * <p>
      * Dependencias sobre ./css/ubuSisInf.css.
-     * 
+     *
      * @throws SQLException
      */
     private void createDocumentos() throws SQLException {
@@ -152,14 +152,14 @@ public class DocIndex extends DocSistInfHtml {
      * calendario de la página de index.html
      * <p>
      * Dependencias sobre ./css/ubuSisInf.css.
-     * 
+     *
      * @throws SQLException
      */
     private void createCalendario() throws SQLException {
 
         outHtml.println("\t\t\t\t\t\t<div class='calendar-container'>");
 
-        String urlCalendario = "http://goo.gl/l4xy8Z";
+        String urlCalendario = "http://goo.gl/PgEkF1";
 
         outHtml.println("\t\t\t\t\t\t\t<iframe src='" + urlCalendario
                 + "'></iframe>");
@@ -173,7 +173,7 @@ public class DocIndex extends DocSistInfHtml {
      * Normas de la página de index.html
      * <p>
      * Dependencias sobre ./css/ubuSisInf.css.
-     * 
+     *
      * @throws SQLException
      */
     private void createNormas() throws SQLException {
@@ -194,7 +194,7 @@ public class DocIndex extends DocSistInfHtml {
      * Tribunal de la página de index.html
      * <p>
      * Dependencias sobre ./css/ubuSisInf.css.
-     * 
+     *
      * @throws SQLException
      */
     private void createTribunal() throws SQLException {
@@ -219,7 +219,7 @@ public class DocIndex extends DocSistInfHtml {
 
     /**
      * Getter de los submenús que tiene la página.
-     * 
+     *
      * @return Los submenús de la página.
      */
     public String[] getTitles() {
@@ -228,7 +228,7 @@ public class DocIndex extends DocSistInfHtml {
 
     /**
      * Setter de los submenús que tiene la página.
-     * 
+     *
      * @param titles
      *            Los títulos de los submenús a cambiar.
      */
