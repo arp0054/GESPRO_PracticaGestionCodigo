@@ -32,7 +32,7 @@ import ubu.digit.htmlgen.DocSistInfHtml;
  * - nivel 4: Genera nivel 3 + métricas de productos (MetricSist.html);
  * <p>
  * - Por defecto se ejecuta nivel 4:");
- * 
+ *
  * @author Carlos López Nozal
  * @author Beatriz Zurera Martínez-Acitores
  * @since 0.6
@@ -51,7 +51,7 @@ public class Generator {
      * URL donde encontramos el fichero con las propiedades del proyecto.
      */
     private static ExternalProperties prop = ExternalProperties
-            .getInstance("./../src/main/config.properties");
+            .getInstance("./config.properties");
 
     /**
      * Constructor vacío.
@@ -79,7 +79,7 @@ public class Generator {
      * - nivel 4: Genera nivel 3 + métricas de productos (MetricSist.html);
      * <p>
      * - Por defecto se ejecuta nivel 4:");
-     * 
+     *
      * @param arg
      *            Nivel de generación.
      * @throws IOException
@@ -153,7 +153,7 @@ public class Generator {
     /**
      * Generación de MetricSist.html y asociación con el resto de documentos de
      * nivel 4.
-     * 
+     *
      * @param level
      *            Información de nivel de gestión.
      */
@@ -196,7 +196,7 @@ public class Generator {
     /**
      * Generación de HistoricoSist.html y asociación con el resto de documentos
      * de nivel 3.
-     * 
+     *
      * @param level
      *            Información de nivel de gestión.
      */
@@ -232,7 +232,7 @@ public class Generator {
     /**
      * Generación de ActualesSist.html y asociación con el resto de documentos
      * de nivel 2.
-     * 
+     *
      * @param level
      *            Información de nivel de gestión.
      */
@@ -270,7 +270,7 @@ public class Generator {
     /**
      * Generación de index.html y asociación con el resto de documentos de nivel
      * 1.
-     * 
+     *
      * @param level
      *            Información de nivel de gestión.
      */
